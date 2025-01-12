@@ -629,10 +629,10 @@ class UserCommunication{
                 moveCursor(18, 23);
             }
             else if(currPage == "SALARY_INFO"){
-                moveCursor(54, 13);
+                moveCursor(1, 6);
                 cout<<"Nhap sai, vui long nhap lai!";
-                deleteSection(18, 15, selection.length());
-                moveCursor(18, 15);
+                deleteSection(18, 5, selection.length());
+                moveCursor(18, 5);
             }
             else if(currPage == "PERSONAL_INFO"){
                 moveCursor(1, 17);
@@ -704,7 +704,12 @@ class UserCommunication{
         }//in thông tin cá nhân
 
         void employeeSalaryInfoPage(vector <string> &data){
-
+            system("cls");
+            cout<<"\n\n\n";
+            cout<<"\tTinh nang dang duoc phat trien, vui long thu lai sau!";
+            cout<<"\n   [B]: QUAY LAI";
+            cout<<"\nLua chon cua ban: ";//
+            moveCursor(18, 5);
         }
 
         void employeeWorkSchedulePage(vector <string> &data){
@@ -918,7 +923,7 @@ void vaitro() // trang lua chon vai tro
            switch(opt)
            {
                case 1: cin.ignore(); dnql(); break;
-               case 2: dnnv();
+               case 2: cin.ignore(); dnnv(); break;
            }
            break;
         }
