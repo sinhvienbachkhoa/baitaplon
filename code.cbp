@@ -32,8 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="dsnhanvien.csv" />
+		<Unit filename="filetam.csv" />
 		<Unit filename="main.cpp" />
+		<Unit filename="soluong.txt" />
 		<Unit filename="taikhoan.csv" />
+		<Unit filename="thucdon.csv" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
